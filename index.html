@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Magníficat Beauty Salon</title>
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -18,69 +19,103 @@
                 </li>
             </ul>
             <h1 class="title">
-                Magnífique Esthetique
+                Magníficat Esthetique
             </h1>
             <ul class="list2">
                 <li>
                     <a href="#"> Contact Us </a>
-                    <a href="#"> Wishlist </a>
+                    <a href="./html/cart.html"> Wishlist </a>
                     <a href="#"> My account </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="section1">
-            <video  autoplay loop audio>
+        <section class="section1 text-section">
+            <video loop audio autoplay>
                 <source src="./videos/bgvideo1.mp4" type="video/mp4">
                 Tu navegador no admite el elemento de video.
             </video>
-            <h2>A whole new world of opportunities </h2>
+            <div class="rolling-text">
+                <h2 class="text">A whole new world of opportunities</h2>
+            </div>
+            <div class="buttonsContainer">
+                <i class="bi bi-volume-up-fill volUpButton" id="volUpButton"></i>
+                <i class="bi bi-play-fill playButton" id="playButton"></i>
+            </div>
             
+
+
+
         </section>
         <section class="section2">
-            <!-- <video preload="auto" autoplay loop muted>
-                <source src="./videos/bgvideo2.mp4" type="video/mp4">
-                Tu navegador no admite el elemento de video.
-            </video> -->
-            <h2>Laser permanent hair <br> removal</h2>
-            <button>Book appointment</button>
+            <h2>Facials & body <br> treatments </h2>
+            <a href="./html/cart.html">Book appointment</a>
         </section>
         <section class="section3">
-            <h2> Facial treatments</h2>
-            <button>Book appointment</button>
+
+            <h2> Haircuts and styling </h2>
+            <a href="./html/cart.html">Book appointment</a>
+
         </section>
         <section class="section4">
-            <!-- <video preload="auto" autoplay loop muted>
-                <source src="./videos/bgvideo2.mp4" type="video/mp4">
-                Tu navegador no admite el elemento de video.
-            </video> -->
-            <h2>Tanning Booths / Spray tanning </h2>
+
+            <h2>Tanning Booths / Spray tanning  </h2>
+
+
         </section>
-        <section class="section5">e</section>
-    </main>
+        <section class="section5">
+
+            <h2> Exfolation / Peeling / Massages</h2>
+            <a href="./html/cart.html">Book appointment</a>
+
+        </section>
+        <section class="section6">
+
+            <h2> Relaxation & Self-care</h2>
+            <a href="./html/cart.html">Book appointment</a>
+
+        </section>
+        <!-- <a class="whatsappIcon" target="_blank"  href="https://wa.me/5493854138562?text=Greetings Mr. Wayne. My name is ... and I'd like to know if you'd be kind enough to give me some of your precious time. Thank you in advance."><img src="./img/whatsapp.svg" alt="Whatsapp Icon"></a> -->
+
     <footer>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos dolore ipsam eaque amet distinctio impedit, quaerat architecto? Repudiandae velit voluptate omnis sed! Aliquid repudiandae libero esse ut, ipsa nesciunt voluptate maiores, quisquam asperiores odio reprehenderit consequatur quidem cum ipsam! Vitae laboriosam exercitationem dolores doloremque deleniti minima dolorem, temporibus nemo! Odit exercitationem doloremque, necessitatibus reiciendis assumenda error cumque iste, nihil impedit labore nulla ex eos aspernatur. Porro minus quasi, voluptatibus architecto magni, aliquam ea harum voluptates ipsam in ipsa, nisi autem dignissimos dolor quam vero explicabo. Temporibus quaerat nihil minus esse?</p>
+        <section class="footerContainer1">
+            <ul class="help">
+                <h3>Help</h3>
+                <li><a href="#">You can call or email us.</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Product Care</a></li>
+                <li><a href="#">Stores</a></li>
+            </ul>
+
+            <ul class="about-us">
+                <h3>Designers & Developers</h3>
+                <li><a href="#">Santiago Valentín Zelada</a></li>
+                <li><a href="#">Ibarra Ignacio Martín</a></li>
+                <li><a href="#">Villa Daniela Lucía</a></li>
+                <li><a href="#">Morales Agustín</a></li>
+                <li><a href="#">Vece Joaquín</a></li>
+            </ul>
+
+            <ul class="log-in">
+                <h3>Connect</h3>
+                <li><a href="#">Sign up for first access to latest collections, campaigns and videos.</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Whatsapp</a></li>
+            </ul>
+        </section>
+
+
+        <hr class="line">
+        <section class="footerContainer2">
+            <p> All rights Reserved © Magnificat Beauty Salon </p>
+        </section>
+
+
+
+
     </footer>
-
-    <script>
-        document.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    var section2 = document.querySelector(".section2");
-    
-    // Obtén la posición vertical del encabezado y la .section2
-    var headerTop = header.getBoundingClientRect().top;
-    var section2Top = section2.getBoundingClientRect().top;
-    
-    // Si la parte superior de la .section2 está en la parte superior de la ventana, cambia el fondo del encabezado a transparente
-    if (section2Top <= 0) {
-        header.style.backgroundColor = "rgb(214, 213, 215)";
-    } else {
-        header.style.backgroundColor = "transparent"; // Si no, mantenlo blanco
-    }
-});
-
-    </script>
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
