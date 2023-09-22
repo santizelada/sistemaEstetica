@@ -6,12 +6,65 @@ let body = document.querySelector('body')
 let total = document.querySelector('.total')
 let quantity = document.querySelector('.quantity')
 
+const video = document.querySelector('video');
+const playButton = document.getElementById('playButton');
+const volUpButton = document.getElementById('volUpButton');
+
+
+/* --------------------------------------- Scroll Event Detection System -------------------------*/
+
+const navbar = document.querySelector('header')
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0){
+        navbar.classList.add('transparent-navbar')
+    } else {
+        navbar.classList.remove('transparent-navbar')
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active')
 })
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active')
 })
+
+
+
+playButton.addEventListener('click', () => {
+    if (video.paused) {
+        video.play(); // Reproducir el video si está pausado
+    } else {
+        video.pause(); // Pausar el video si está reproduciendo
+    }
+});
+
+volUpButton.addEventListener('click', () => {
+    if (video.volume === 0) {
+        video.volume = 1; // Establecer el volumen al máximo si está silenciado
+    } else {
+        video.volume = 0; // Silenciar el video si no está silenciado
+    }
+});
+
+
+
 
 let products = [
     {
@@ -23,7 +76,7 @@ let products = [
     {
         id: 2,
         name: 'PRODUCT NAME 2',
-        image: '../img/jlawOrangeBlazer.webp',
+        image: '../img/aDabg1.png',
         price: 75100
     }, 
     {
@@ -53,7 +106,7 @@ let products = [
     {
         id: 1,
         name: 'PRODUCT NAME 1',
-        image: '../img/bg1.png',
+        image: '../img/aDabg2.png',
         price: 120000
     },
     {
@@ -65,7 +118,7 @@ let products = [
     {
         id: 3,
         name: 'PRODUCT NAME 3',
-        image: '../img/bg4.png',
+        image: '../img/aDabg3.png',
         price: 8900
     },
     {
@@ -77,7 +130,7 @@ let products = [
     {
         id: 5,
         name: 'PRODUCT NAME 5',
-        image: '../img/bg5.png',
+        image: '../img/aDabg4.png',
         price: 8900
     },
     {
@@ -132,7 +185,6 @@ function reloadCard() {
             <div>${value.quantity}</div>
             <div>
                 <button class="buttonCard" onClick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-                <div class="count">${value.quantity}</div>
                 <button class="buttonCard" onClick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
             </div>
             `
@@ -142,6 +194,18 @@ function reloadCard() {
     total.innerText = `US$${totalPrice.toLocaleString()}`
     quantity.innerText = count
 }
+
+
+
+//<div class="count">${value.quantity}</div> this may have to be included between the two buttons "+" & "-"
+
+
+
+
+
+
+
+
 
 function changeQuantity(key, quantity){
     if(quantity == 0){

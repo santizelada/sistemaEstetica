@@ -18,6 +18,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;  /*------------------Watch out this property--------------*/
+
 }
 
 header {
@@ -35,6 +36,8 @@ header {
     color: black;
     font-size: 2rem;
     text-align: center;
+    font-weight: 100;
+
 }
 
 .nav-container{
@@ -93,6 +96,7 @@ section{
 
 }
 
+
 .section1 {
     background-size: cover;
 
@@ -122,6 +126,8 @@ section{
 .section1 h2{
     z-index: 0;
     font-size: 2.5rem;
+    font-weight: 100;
+    
 }
 
 
@@ -162,6 +168,8 @@ left: 20px;
 .section2 h2{
     margin: 5% 0 0 5%;
     font-size: 3.7rem;
+    font-weight: 100;
+
 }
 
 .section2 a{
@@ -202,6 +210,8 @@ left: 20px;
 .section3 h2{
     color:rgb(214, 213, 215);
     font-size: 3.7rem;
+    font-weight: 100;
+
 }
 
 .section3 a{
@@ -223,6 +233,23 @@ left: 20px;
 }
 
 
+
+
+
+
+
+
+.section4{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4  ), rgba(0, 0, 0, 0.4)), url(../img/jlByThePool.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .section4 video{
     object-fit: cover;
     width: 100%;
@@ -230,22 +257,36 @@ left: 20px;
     position: relative;
 }
 
-.section4{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/jlByThePool.png);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .section4 h2{
 
-    font-size: 2.9rem;
-    color:rgb(214, 213, 215)
+    font-size: 3.7rem;
+    color:rgb(214, 213, 215);
+    font-weight: 100;
 
 }
+
+.section4 a{
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-width: 0;
+    background-color: rgb(214, 213, 215);
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+    margin-top: 5%;
+}
+
+.section4 a:hover{
+    background-color:rgb(0, 61, 81);
+    color:rgb(214, 213, 215);
+}
+
+
+
+
 
 .section5{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/jlByThePool2.png);
@@ -265,6 +306,8 @@ left: 20px;
 
 .section5 h2{
     font-size: 3.7rem;
+    font-weight: 100;
+
 }
 
 .section5 a{
@@ -299,11 +342,13 @@ left: 20px;
     justify-content: space-around;
     padding: 10%;
     color:rgb(214, 213, 215);
-
+    
 }
 
 .section6 h2{
     font-size: 3.7rem;
+    font-weight: 100;
+
 }
 
 .section6 a{
