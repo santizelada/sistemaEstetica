@@ -90,6 +90,7 @@ header {
 
 
 
+
 section{
     width: 100vw;
     height: 100vh;
@@ -169,8 +170,29 @@ left: 20px;
     margin: 5% 0 0 5%;
     font-size: 3.7rem;
     font-weight: 100;
+    animation: slide-in 3s infinite ease;
 
 }
+
+@keyframes slide-in {
+    from{
+        transform: translateX(-50vw);
+
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+
+
+
+
+
 
 .section2 a{
     padding: 15px;
