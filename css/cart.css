@@ -291,10 +291,11 @@ height:23px;
     color:rgb(214, 213, 215);
 }
 
-.list .item button:hover{
-
+.list .item:hover button {
+  /* Estilos del botón cuando se hace hover en el item */
+  background-color: #ff0000; /* Cambia el color de fondo del botón en hover */
+  /* ...otros estilos... */
 }
-
 
 .card{
     position: fixed;

@@ -11,6 +11,24 @@ const playButton = document.getElementById('playButton');
 const volUpButton = document.getElementById('volUpButton');
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------------------------- Scroll Event Detection System -------------------------*/
 
 // const navbar = document.querySelector('header')
@@ -170,7 +188,7 @@ function initApp(){
         <img src="${value.image}"/>
         <div class="title">${value.name}</div>
         <div class="price">US$${value.price.toLocaleString()}</div>
-        <button onClick="addToCard(${key})">Add to Cart</button>
+        <button class="itemBtn" onClick="addToCard(${key})">Add to Cart</button>
 
         `
         list.appendChild(newDiv)
@@ -178,6 +196,38 @@ function initApp(){
 }
 
 initApp()
+
+const items = document.querySelectorAll('.list .item');
+
+// Recorre cada elemento .item y agrega el evento mouseenter
+items.forEach((item) => {
+  item.addEventListener('mouseenter', function() {
+    // Cambia el color de fondo del item
+    item.style.backgroundColor = '#b96f36'; // Color de fondo en hover
+
+    // Cambia el color de fondo del botón dentro del item
+    const button = item.querySelector('button');
+    button.style.backgroundColor = 'rgb(214, 213, 215) '; // Color de fondo del botón en hover
+    button.style.color = '#cf691b'
+});
+
+  item.addEventListener('mouseleave', function() {
+    // Restaura el color de fondo original del item
+    item.style.backgroundColor = 'var(--colorWhite)'; // Color de fondo original
+
+    // Restaura el color de fondo original del botón dentro del item
+    const button = item.querySelector('button');
+    button.style.backgroundColor = '#cf691b'; // Color de fondo original del botón
+    button.style.color = 'var(--colorWhite)'
+  });
+});
+
+
+
+
+
+
+
 
 function addToCard(key){
     if(listCards[key] == null){
