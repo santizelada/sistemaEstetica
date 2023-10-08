@@ -13,16 +13,36 @@ const volUpButton = document.getElementById('volUpButton');
 
 /* --------------------------------------- Scroll Event Detection System -------------------------*/
 
-const navbar = document.querySelector('header')
+// const navbar = document.querySelector('header')
+
+// document.addEventListener('scroll', () => {
+//     if (window.scrollY = 0){
+//         navbar.classList.add('transparent-navbar')
+
+//     } else if (window.scrollY > 0){
+//         navbar.classList.remove('transparent-navbar')
+//     }
+//     else {
+//         navbar.classList.remove('transparent-navbar')
+
+//     }
+// })
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 0){
-        navbar.classList.add('transparent-navbar')
-    } else {
-        navbar.classList.remove('transparent-navbar')
-    }
-})
+    var navbar = document.getElementById("navbar");
+    var section2 = document.querySelector(".section2");
 
+    // Altura desde la parte superior de la página hasta la parte superior de .section2
+    var section2Top = section2.offsetTop;
+
+    if (window.scrollY > section2Top) {
+        // Cuando el usuario se desplaza más allá de .section2, eliminamos la clase transparent-navbar
+        navbar.classList.remove('transparent-navbar');
+    } else {
+        // Cuando el usuario está por encima de .section2, agregamos la clase transparent-navbar
+        navbar.classList.add('transparent-navbar');
+    }
+});
 
 
 
