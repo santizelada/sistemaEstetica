@@ -1,18 +1,34 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const path = require("path")
+// const MercadoPago = require("mercadopago");
+import { MercadoPagoConfig, Payment } from 'mercadopago'
 
-const mercadopago = require("mercadopago");
+// Agrega credenciales
+const client = new MercadoPagoConfig({ accessToken: 'TEST-7098395277279885-092411-6d85f0aa723320d106f8ad6bf8d5e489-1054381811' });
+
+// const preference = new Preference(client);
+
+// preference.create({
+//   'items': [
+//      {
+// 	 'title': 'Meu produto',
+// 	 'quantity': 1,
+// 	 'currency_id': 'BRL',
+// 	 'unit_price': 100
+//      }
+//   ]
+// }).then((result) => console.log(result))
+// 	.catch((error) => console.log(error));
 
 // REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
-mercadopago.configure({
-	access_token: "TEST-7098395277279885-092411-6d85f0aa723320d106f8ad6bf8d5e489-1054381811",
-});
-
+// mercadopago.configure({
+// 	access_token: "",
+// });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
 app.use(express.static(path.join(__dirname, "../client"))); /*------------------There could be an error here with the colons "__dirname"-------------*/
 app.use(cors());
 
