@@ -10,44 +10,55 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <ul class="list1">
-                <li>
-                    <a href="#">Menu</a>
-                    <a href="#">Search</a>
-                </li>
-            </ul>
-            <h1 class="title">
-                Magníficat Esthetique
-            </h1>
-            <ul class="list2">
-                <li>
-                    <a href="./html/cart.html"> Wishlist </a>
-                    <a href="./html/myAccount.html"> My account </a>
-                    <a href="./html/contacUs.html"> Contact Us </a>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/Magnificatestetique.png" alt="Logo de la marca"></a>
 
-                </li>
+        </div>
+        <nav>
+            <!-- <ul class="list1">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Search</a></li> 
+            </ul> -->
+            <!-- <div class="title" >
+                <h1> Magníficat Esthetique</h1>
+            </div> -->
+            <ul class="nav-links">
+                <li><a href="./html/cart.html"> Wishlist </a></li>
+                <li><a href="./html/myAccount.html"> My account </a></li>
+                <!-- <li> <a href="./html/contacUs.html"> Contact Us </a></li> -->
             </ul>
         </nav>
+        <a class="btn" href="./html/contacUs.html"> <button> Contact Us </button></a>
+        <a onclick="openNav()" class="menu" href="#"> <button>MENU</button></a>
+        
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="./html/cart.html"> Wishlist </a>
+                <a href="./html/myAccount.html"> My account </a>
+                <a href="./html/contacUs.html"> Contact Us </a>
+            </div>
+        </div>
+
     </header>
-        <section class="section1 text-section">
+        <!-- <section class="section1 text-section">
             <video loop audio autoplay>
                 <source src="./videos/bgvideo1.mp4" type="video/mp4">
                 Tu navegador no admite el elemento de video.
-            </video>
-            <div class="rolling-text">
+            </video> -->
+            <!-- <div class="rolling-text">
                 <h2 class="text">A whole new world of opportunities</h2>
-            </div>
-            <div class="buttonsContainer">
+            </div> -->
+            <!-- <div class="buttonsContainer">
                 <i class="bi bi-volume-up-fill volUpButton" id="volUpButton"></i>
                 <i class="bi bi-play-fill playButton" id="playButton"></i>
-            </div>
+            </div> -->
             
 
 
 
-        </section>
+        <!-- </section> -->
         <section class="section2">
             <h2>Facials & body <br> treatments </h2>
             <a href="./html/cart.html#section1">Book appointment</a>
@@ -79,23 +90,14 @@
         </section>
         <!-- <a class="whatsappIcon" target="_blank"  href="https://wa.me/5493854138562?text=Greetings Mr. Wayne. My name is ... and I'd like to know if you'd be kind enough to give me some of your precious time. Thank you in advance."><img src="./img/whatsapp.svg" alt="Whatsapp Icon"></a> -->
 
-    <footer>
-        <section class="footerContainer1">
+    <footer class="footer">
+        <!-- <section class="footerContainer1">
             <ul class="help">
                 <h3>Help</h3>
                 <li><a href="#">You can call or email us.</a></li>
                 <li><a href="#">FAQ's</a></li>
                 <li><a href="#">Product Care</a></li>
                 <li><a href="#">Stores</a></li>
-            </ul>
-
-            <ul class="about-us">
-                <h3>Designers & Developers</h3>
-                <li><a href="#">Santiago Valentín Zelada</a></li>
-                <li><a href="#">Ibarra Ignacio Martín</a></li>
-                <li><a href="#">Villa Daniela Lucía</a></li>
-                <li><a href="#">Morales Agustín</a></li>
-                <li><a href="#">Vece Joaquín</a></li>
             </ul>
 
             <ul class="log-in">
@@ -112,12 +114,44 @@
         <hr class="line">
         <section class="footerContainer2">
             <p> All rights Reserved © Magnificat Beauty Salon </p>
-        </section>
+        </section> -->
+
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">You can call or email us</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Product Care</a></li>
+                    <li><a href="#">Stores</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>CONNECT</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-links">
+                <span class="copyright">&copy;2023, Magnificatestetique. All rights reserved.</span>
+                
+            </div>
+            
+
+        </div>
+    </div>
+
+
 
 
 
 
     </footer>
-    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
