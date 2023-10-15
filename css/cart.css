@@ -318,14 +318,14 @@ height:23px;
 
 .card{
     position: fixed;
-    top: 0;
+    height: 100vh;
     left: 100%;
-    width: 500px;
+    width: 40%;
     background-color: rgba(1, 1, 1, 0.87);
     height: 100%;
     transition: 0.5s;
     z-index: 2;
-    overflow: hidden;
+
 }
 
 .card h1{
@@ -333,28 +333,26 @@ height:23px;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
-    height: 80px;
+    height: 12%;
     display: flex;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 15vh;
+
 }
 
 .card .listCard{
-    height: 75vh;
-    width: 110%;
+    height: 80%;
+    width: 100%;
     overflow-y: scroll;
 }
 
 .card .checkOut{
     position: absolute;
     width: 100%;
+    height: 8%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 6vh;
-    bottom: 0.5px;
-
 }
 
 
@@ -400,7 +398,7 @@ height:23px;
 
 
 .active .card{
-    left: calc(100% - 500px)
+    left: calc(100% - 40%)
 }
 
 .active .container{
@@ -458,8 +456,29 @@ height:23px;
 }
 
 
+@media (max-width: 1065px) {
 
-@media (max-width: 800px) {
+    .card{
+        width: 60%;
+    }
+    
+    .active .card{
+        left: calc(100% - 60%)
+    }
+    
+}
+
+@media (max-width: 720px) {
+
+    .card{
+        width: 80%;
+    }
+    
+    .active .card{
+        left: calc(100% - 80%)
+    }
+
+
 
     .section2 h2{
         text-align: center;
@@ -485,122 +504,35 @@ height:23px;
     
 
     
-.card{
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 500px;
-    background-color: rgba(1, 1, 1, 0.87);
-    height: 100%;
-    transition: 0.5s;
-    z-index: 2;
-    overflow: hidden;
-}
-
-.card h1{
-    color:rgb(214, 213, 215);
-    font-weight: 100;
-    margin: 0;
-    padding: 0 20px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 15vh;
-}
-
-.card .listCard{
-    height: 75vh;
-    width: 110%;
-    overflow-y: scroll;
-}
-
-.card .checkOut{
-    position: absolute;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 6vh;
-    bottom: 0.5px;
-
-}
-
-
-
-
-
-
-
-.card .checkOut div{
-    background-color:#bf6724;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    cursor: pointer;
-    grid-column: 1/3;
-    color:rgb(214, 213, 215);
-}
-
-.active .card{
-    left: calc(100% - 500px)
-}
-
-.active .container{
-    transform: translateX(-0px)
-}
-
-.buttonCard{
-    margin: 10% 2% 5% 10%;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5rem;
-    width: 40px;
-    border-width: 0;
-    background-color:rgb(243, 0, 0);
-    transition: 0.5s;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-
-.listCard li{
-    display: grid;
-    grid-template-columns: 100px repeat(3, 1fr);
-    color:rgb(214, 213, 215);
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-
-.listCard li div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 100px;
-    overflow: hidden;
-
-}
-
-.listCard li img{
-    width: 90%;
-}
-.listCard li button{
-    background-color:#bf6724;
-    border: none;
-    width: 4000px;
-}
-.listCard .count{
-    /* margin: 0 5px 0 5px; */
-}
 
     }
+
+
+    @media (max-width: 530px) {
+    .card{
+        width: 100%;
+    }
+    
+    .active .card{
+        left: 0;
+    }
+
+    .card{
+        background-color: rgba(1, 1, 1, 0.9);
+
+    }
+
+    .card h1{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
 
 
 
