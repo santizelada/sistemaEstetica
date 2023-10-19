@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/contactUs.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../css/contactUs.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <ul class="list1">
-                <li>
-                    <a href="../index.html">Home</a>
-                    <a href="#">Search</a>
-                </li>
-            </ul>
-            <h1 class="title">
-                Magníficat Esthetique
-            </h1>
-            <ul class="list2">
-                <li>
-                    <a href="../css/contactUs.css"> Contact Us </a>
+    <section class="contenedor-padre">
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Magnificatestetique.png" alt="Logo de la marca"></a>
+    
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../html/cart.html"> Carrito </a></li>
+                    <li><a href="../html/myAccount.html"> Ingresar </a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="../html/contacUs.html"> <button> Contactanos </button></a>
+            <a onclick="openNav()" class="menu" href="#"> <button>MENU</button></a>
+            
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
                     <a href="../html/cart.html"> Wishlist </a>
-                    <a href="#"> My account </a>
-                </li>
-            </ul>
-        </nav>
+                    <a href="../html/myAccount.html"> My account </a>
+                    <a href="../html/contacUs.html"> Contact Us </a>
+                </div>
+            </div>
+        </header>
 
      <div class="content">
 
-      <h1 class="logo">Contactanos</h1>
+      <h1 class="titulo">Contactanos</h1>
       <div class="contact-wrapper">
         <div class="contact-form">
             <h3>Conctacto</h3>
@@ -60,7 +65,7 @@
             </form>
         </div>
         <div class="contact-info">
-            <h4>Mas informacion</h4>
+            <h4>Más informacion</h4>
             <ul>
                 <li><i class="fas fa-map-marker-alt"></i> 9 de Julio al 500</li>
                 <a href="https://wa.me/543816214102" target="_blank"> <img src="../img/whatsapp-line.svg" style="width: 20px; height: 20px;"> Whatsapp</a><br>
@@ -70,6 +75,38 @@
         </div>
       </div>
      </div>
-    </header>
+
+    <footer class="footer">  
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="#">You can call or email us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Product Care</a></li>
+                        <li><a href="#">Stores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>CONNECT</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Whatsapp</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-links">
+                    <span class="copyright">&copy;2023, Magnificatestetique. All rights reserved.</span>
+                    
+                </div>
+                
+    
+            </div>
+        </div>
+        </footer>
+    </section>
 </body>
 </html>
