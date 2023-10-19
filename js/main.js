@@ -8,26 +8,26 @@ function closeNav(){
 
 
 
-document.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    var section2 = document.querySelector(".section2");
+// document.addEventListener("scroll", function () {
+//     var header = document.querySelector("header");
+//     var section2 = document.querySelector(".section2");
     
-    // Obtén la posición vertical del encabezado y la .section2
-    var headerTop = header.getBoundingClientRect().top;
-    var section2Top = section2.getBoundingClientRect().top;
+//     // Obtén la posición vertical del encabezado y la .section2
+//     var headerTop = header.getBoundingClientRect().top;
+//     var section2Top = section2.getBoundingClientRect().top;
     
-    // Si la parte superior de la .section2 está en la parte superior de la ventana, cambia el fondo del encabezado a transparente
-    if (section2Top <= 0) {
-        header.style.backgroundColor = "rgb(214, 213, 215)";
-    } else {
-        header.style.backgroundColor = "transparent"; // Si no, mantenlo blanco
-    }
-    });
+//     // Si la parte superior de la .section2 está en la parte superior de la ventana, cambia el fondo del encabezado a transparente
+//     if (section2Top <= 0) {
+//         header.style.backgroundColor = "rgb(214, 213, 215)";
+//     } else {
+//         header.style.backgroundColor = "transparent"; // Si no, mantenlo blanco
+//     }
+//     });
 
 
-document.addEventListener("click", function(){
+// document.addEventListener("click", function(){
 
-})
+// })
 
 
 

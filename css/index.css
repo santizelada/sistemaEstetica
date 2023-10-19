@@ -12,7 +12,7 @@
 
 
 body{
-    background-color: #1b3039;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -21,23 +21,10 @@ body{
 
 }
 
-/* header {
-    
-    
-    width: 100%;
-    position: relative; 
-    background-color: rgb(214, 213, 215); 
-    transition: background-color 0.5s; 
-    z-index: 1;  
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 85px;
-    padding: 3px 10%;
-} */
+
 .header{
     background-color: #1b3039;
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -78,62 +65,11 @@ body{
     color: #ffbc0e;
 }
 
-/* .nav-container{
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    transition: 0.5s;
-} */
-
-/* .nav-container:hover{
-    background-color: rgb(214, 213, 215);
-} */
-
-/* .nav-container a{
-    list-style: none;
-    text-decoration: none; 
-    color:  #ffffff;
-    margin: 10px;
-    font-size: 1.2rem;
-} */
-
-/* .list1{
-    margin-left: 1.5%;
-}
-
-.list2{
-    margin-right: 1%;
-} */
-/* .nav-container .list1 li{
-    display: inline-block;
-    
-} */
-/* .nav-container .list2 li{
-    display: inline-block;
-    
-} */
-/* .nav-container .list1 li:hover{
-    transform: scale(1.2);
-}
-.nav-container .list1 a:hover{
-    color: #1358e1;
-} */
-/* .nav-container .list2 a:hover{
-    color: #1358e1;
-} */
- /* .nav-container .list2 li:hover{
-    transform: scale(1.2);
-}  */
-
 .menu{
     display: none;
 }
 .header .menu button{
-    /* margin-left: 20px; */
+    
     font-weight: 700;
     color: #1b3039;
     padding: 9px 25px;
@@ -315,6 +251,22 @@ left: 20px;
     right: 35px;
 }
 
+.whatsapp{
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+   
+.whatsapp img{
+    width: 40px;
+
+}
+.whatsapp img:hover{
+    transform: scale(1.2);
+}
+
+
 .section2{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg1.png);
     background-size: cover;
@@ -358,7 +310,8 @@ left: 20px;
 
 
 .section3{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/jlawOnGrass.webp);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/jlawOnCouch.webp);
+    
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -492,7 +445,7 @@ left: 20px;
 
 
 .section6{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/jlawOnCouch.webp);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/jlawOnGrass.webp);
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
@@ -687,4 +640,14 @@ footer .footerContainer2{
     color: #f2f2f2;
     opacity: 0.3;
     text-align: center;
+}
+
+@media(max-width:550px){
+    .section4 h2{
+        font-size: 1.5rem;
+    }
+
+    
+    
+    
 }
