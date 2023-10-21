@@ -1,5 +1,4 @@
 
-  document.addEventListener("DOMContentLoaded", function() {
     const mercadopago = new MercadoPago("TEST-2d36376d-c262-46bf-8480-3b2b27f81719", {
       locale: "es-AR", 
   })
@@ -85,6 +84,4 @@
       }, 500);
       $('#checkout-btn').attr("disabled", false);
     });
-  
-});
 
