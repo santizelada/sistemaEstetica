@@ -209,14 +209,19 @@ height:23px;
 
 .section2{
     background-color:#ffd6b6;
+    background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%); 
+    border-radius: 10px;
+    text-align: center;
     /* background: radial-gradient(ellipse at bottom, #cea581 0%, #ffd6b6 100%);
  */
+    height: 500vh;
 }
+
 
 .section2 h2{
     padding: 5% 0 2% 6%;
     text-transform: uppercase;
-    color:rgba(1, 1, 1, 0.756);
+    color:var(--colorWhite);
     font-size: 2rem;
     font-weight: 200;
     text-align: left;
@@ -228,15 +233,8 @@ height:23px;
     height: 1px;
     border: none;
     margin: 0 5% 0 3%;
+
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -246,13 +244,17 @@ height:23px;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 30px;
-    /* margin-top: 50px; */
     padding: 5%;
-    background: radial-gradient(ellipse at bottom, #cea581 0%, #ffd6b6 100%);
-    /* background-color:rgb(204, 203, 205); */
+    /* background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%);  */
+    background-color: transparent;
+    z-index: 1;
     position: absolute;
-    /* flex-basis: calc(25% - 10px); */
     flex: 0 0 calc(25% - 30px);
+}
+
+.list section{
+    z-index: -1;
+
 }
 
 
@@ -307,6 +309,131 @@ height:23px;
   background-color: #ff0000; /* Cambia el color de fondo del botón en hover */
   /* ...otros estilos... */
 }
+
+
+
+
+
+
+
+
+/*------------------------------------------SECTION HIMFU----------------------------------------------------*/
+
+.section3{
+    background-color:#ffd6b6;
+    /* background: radial-gradient(ellipse at bottom, #cea581 0%, #ffd6b6 100%);
+ */
+}
+
+.section3 h2{
+    padding: 5% 0 2% 6%;
+    text-transform: uppercase;
+    color:rgba(1, 1, 1, 0.756);
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+.section3 hr{
+    
+    background-color:rgb(0, 0, 0);
+    height: 1px;
+    border: none;
+    margin: 0 5% 0 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section3 .list2{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    /* margin-top: 50px; */
+    padding: 5%;
+    background: radial-gradient(ellipse at bottom, #cea581 0%, #ffd6b6 100%);
+    /* background-color:rgb(204, 203, 205); */
+    position: absolute;
+    /* flex-basis: calc(25% - 10px); */
+    flex: 0 0 calc(25% - 30px);
+}
+
+
+.list2 .item{
+    flex: 1;
+    text-align: center;
+    background-color:var(--colorWhite);
+    padding: 8%;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+    border-radius: 0%;
+    transition: 1.3s;
+}
+
+.list2 .item:hover{
+    background-color: #b96f36;
+}
+
+.list2 .item img{
+    border-radius: 4%;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.list2 .item .title{
+    margin: 4%;
+}
+
+
+.list2 .item .price{
+    margin: 5%;
+    font-size: 1.5rem;
+    
+}
+
+.list2 .item button{
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-width: 0;
+    background-color:  #cf691b;
+    transition: 0.5s;
+    cursor: pointer;
+    color:rgb(214, 213, 215);
+}
+
+.list2 .item:hover button {
+  /* Estilos del botón cuando se hace hover en el item */
+  background-color: #ff0000; /* Cambia el color de fondo del botón en hover */
+  /* ...otros estilos... */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

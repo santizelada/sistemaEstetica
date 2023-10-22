@@ -1,6 +1,7 @@
 let openShopping = document.querySelector('.shopping')
 let closeShopping = document.querySelector('.closeShopping')
 let list = document.querySelector('.list')
+let list2 = document.querySelector('.list2')
 let listCard = document.querySelector('.listCard') //cuidado con COMILLAS COMPUESTAS. EL VIDEO USA COMILLAS SIMPLEEEEEEEEEEEEES
 let body = document.querySelector('body')
 let total = document.querySelector('.total')
@@ -107,76 +108,123 @@ volUpButton.addEventListener('click', () => {
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
+        name: 'Rostro',
         image: '../img/bg1.png',
-        price: 120000
+        price: 1200
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
+        name: 'Bozo',
         image: '../img/aDabg1.png',
-        price: 75100
+        price: 500
     }, 
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
+        name: 'Pierna Completa',
         image: '../img/jlByThePool2.png',
-        price: 8900
+        price: 2500
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
+        name: 'Cuerpo completo',
         image: '../img/jlByThePool3.png',
-        price: 8900
+        price: 6000
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
+        name: 'Barba',
         image: '../img/jlawWindow.jpg',
-        price: 8900
+        price: 1000
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
+        name: 'Barba y bozo',
+        image: '../img/jlawWindow.jpg',
+        price: 1300
+    },
+    {
+        id: 7,
+        name: 'Hombros',
+        image: '../img/jlawWindow.jpg',
+        price: 134156416500
+    },
+    {
+        id: 8,
+        name: 'Axilas',
         image: '../img/bg4.png',
-        price: 8900
+        price: 1200
     },
     {
-        id: 1,
-        name: 'PRODUCT NAME 1',
-        image: '../img/aDabg2.png',
-        price: 120000
+        id: 9,
+        name: 'Brazo completo',
+        image: '../img/jlawOnCouch2.png',
+        price: 1800
     },
     {
-        id: 2,
-        name: 'PRODUCT NAME 2',
-        image: '../img/bg3.png',
-        price: 75100
+        id: 10,
+        name: 'Abdomen y pecho',
+        image: '../img/jlawOnCouch2.png',
+        price: 2000
+    },
+    {
+        id: 11,
+        name: 'Espalda',
+        image: '../img/jlawOnCouch2.png',
+        price: 1800
+    },
+    {
+        id: 12,
+        name: 'Pelvis',
+        image: '../img/jlawOnCouch2.png',
+        price: 1500
+    },
+    {
+        id: 13,
+        name: 'Tira de cola',
+        image: '../img/jlawOnCouch2.png',
+        price: 700
+    },
+    {
+        id: 14,
+        name: 'Cavado completo ',
+        image: '../img/jlawOnCouch2.png',
+        price: 2000,
+    },
+
+]
+
+let combos = [
+    {
+        id: 15,
+        name: 'Rostro',
+        image: '../img/bg1.png',
+        price: 1200
+    },
+    {
+        id: 16,
+        name: 'Bozo',
+        image: '../img/aDabg1.png',
+        price: 500
     }, 
     {
-        id: 3,
-        name: 'PRODUCT NAME 3',
-        image: '../img/aDabg3.png',
-        price: 8900
+        id: 17,
+        name: 'Pierna Completa',
+        image: '../img/jlByThePool2.png',
+        price: 2500
     },
     {
-        id: 4,
-        name: 'PRODUCT NAME 4',
-        image: '../img/bg2.png',
-        price: 8900
+        id: 18,
+        name: 'Cuerpo completo',
+        image: '../img/jlByThePool3.png',
+        price: 6000
     },
     {
-        id: 5,
-        name: 'PRODUCT NAME 5',
-        image: '../img/aDabg4.png',
-        price: 8900
+        id: 19,
+        name: 'Barba',
+        image: '../img/jlawWindow.jpg',
+        price: 1000
     },
-    {
-        id: 6,
-        name: 'PRODUCT NAME 6',
-        image: '../img/bg6.png',
-        price: 8900
-    },
+
 ]
 
 let listCards = []
@@ -187,12 +235,28 @@ function initApp(){
         newDiv.innerHTML = `
         <img src="${value.image}"/>
         <div class="title">${value.name}</div>
-        <div class="price">US$${value.price.toLocaleString()}</div>
-        <button class="itemBtn" onClick="addToCard(${key})">Add to Cart</button>
+        <div class="price">$${value.price.toLocaleString()}</div>
+        <button class="itemBtn" onClick="addToCard(${key})">Agregar</button>
 
         `
         list.appendChild(newDiv)
     })
+
+    // combos.forEach((value, key)=>{
+    //     let newDiv = document.createElement('div')
+    //     newDiv.classList.add('item')
+    //     newDiv.innerHTML = `
+    //     <img src="${value.image}"/>
+    //     <div class="title">${value.name}</div>
+    //     <div class="price">$${value.price.toLocaleString()}</div>
+    //     <button class="itemBtn" onClick="addToCard(${key})">Agregar</button>
+
+    //     `
+    //     list2.appendChild(newDiv)
+    // })
+
+
+
 }
 
 initApp()
