@@ -1,3 +1,12 @@
+function openNav(){
+    document.getElementById("mobile-menu").style.width="100%"
+}
+function closeNav(){
+    document.getElementById("mobile-menu").style.width="0%"
+}
+
+
+
 document.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     var section2 = document.querySelector(".section2");
@@ -36,16 +45,17 @@ const playButton = document.getElementById('playButton')
 
 
 // Agrega un manejador de eventos al botón de aumento de volumen
-volUpButton.addEventListener('click', () => {
-    // Verifica el estado del volumen actual del video
-    if (video.volume === 0) {
-        // Si el volumen está en silencio, ajústalo al máximo
-        video.volume = 1;
-    } else {
-        // Si el volumen no está en silencio, ponlo en silencio
-        video.volume = 0;
-    }
-});
+
+// volUpButton.addEventListener('click', () => {
+//     // Verifica el estado del volumen actual del video
+//     if (video.volume === 0) {
+//         // Si el volumen está en silencio, ajústalo al máximo
+//         video.volume = 1;
+//     } else {
+//         // Si el volumen no está en silencio, ponlo en silencio
+//         video.volume = 0;
+//     }
+// });
 
 
 

@@ -145,8 +145,8 @@ let products = [
     {
         id: 7,
         name: 'Hombros',
-        image: '../img/jlawWindow.jpg',
-        price: 134156416500
+        image: '../img/jlawOnCouch2.png',
+        price: 700
     },
     {
         id: 8,
@@ -190,39 +190,45 @@ let products = [
         image: '../img/jlawOnCouch2.png',
         price: 2000,
     },
+    {
+        id: 15,
+        name: '1 zona de Himfu',
+        image: '../img/jlawOnCouch2.png',
+        price: 2500,
+    },
+    {
+        id: 16,
+        name: '1 zona de HCF corporal ',
+        image: '../img/jlawOnCouch2.png',
+        price: 3000,
+    },
+    {
+        id: 17,
+        name: 'Crioradiofrecuencia facial ',
+        image: '../img/jlawOnCouch2.png',
+        price: 3700,
+    },
 
 ]
 
 let combos = [
     {
         id: 15,
-        name: 'Rostro',
+        name: 'Depilafición definitiva: Cuerpo completo',
         image: '../img/bg1.png',
-        price: 1200
+        price: 5300
     },
     {
         id: 16,
-        name: 'Bozo',
+        name: '1 zona de Himfu + Criofrecuencia',
         image: '../img/aDabg1.png',
         price: 500
     }, 
     {
         id: 17,
-        name: 'Pierna Completa',
+        name: '2 sesiones de crioradiofrecuencia + reducción y modelado de papada gratis',
         image: '../img/jlByThePool2.png',
-        price: 2500
-    },
-    {
-        id: 18,
-        name: 'Cuerpo completo',
-        image: '../img/jlByThePool3.png',
-        price: 6000
-    },
-    {
-        id: 19,
-        name: 'Barba',
-        image: '../img/jlawWindow.jpg',
-        price: 1000
+        price: 3200
     },
 
 ]

@@ -27,7 +27,6 @@ header {
     width: 100%;
     position: fixed;
     /* background-color: rgb(214, 213, 215); Establece el color de fondo inicial en blanco */
-    background: radial-gradient(ellipse at bottom, #cea581 0%, #ffd6b6 100%);
     transition: background-color 0.5s; /* Agrega una transición suave para el cambio de color de fondo */
     z-index: 1;
 }
@@ -70,6 +69,230 @@ header {
 .list2{
     margin-right: 1%;
 }
+
+
+
+.header{
+  background-color:#b55206;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.header .logo{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .logo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+.header .nav-links{
+  list-style: none;
+}
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;    
+}
+.header .nav-links li:hover{
+  transform: scale(1.1);
+}
+.header .nav-links a{
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none;    
+}
+.header .nav-links li a:hover{
+  color: #ffbc0e;
+}
+
+.menu{
+  display: none;
+}
+.header .menu button{
+  
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header .menu button:hover{
+  background-color: #e2f1f8;
+  color: #1358e1;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 800px){
+  .nav-links,.btn{
+      display: none;
+  }
+  .menu{
+      display: inherit;
+  }
+}
+
+.header .overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color:  rgb(49, 70, 82);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+  
+}
+.header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #934306;
+
+}
+.header .overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color:black ;
+  
+}
+.header .overlay a:hover,
+.header .overlay a:focus{
+  color:#1358e1;
+}
+.header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+  
+}
+@media screen and (max-height: 450px){
+  .header .overlay a{
+      font-size: 20px;
+  }
+  .header .overlay .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+}
+
+.header .btn {
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn:hover{
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.footer{
+  background-color:#934306;
+  padding: 80px 0;
+}
+
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight:500 ;
+  border-bottom: 2px solid #1358e1;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #BBBBBB;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  color:#ffffff;
+  padding-left: 6px;
+  
+}
+
+@media(max-width:991px){
+  .footer-row{
+      text-align: center;
+
+  }
+  .footer-links{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+}
+
+
+.copyright{
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .rolling-text {
     z-index: 1;
@@ -147,7 +370,7 @@ body{
   
 }
 
-
+.checkbox:checked
 .section1 a{
   position: absolute;
   z-index: 0;
@@ -171,23 +394,15 @@ left: 20px;
 }
 
 
+.elementContainer{
+  height: 100vh;
 
-
-
-
-
-
-
-
-
-
+}
 
 .containerLoginRegister{
   padding-top: 5%;
 
 }
-
-
 
 
 a:hover {
@@ -344,7 +559,7 @@ display: none;
   line-height: 48px;
   text-align: left;
   -webkit-transition: all 200ms linear;
-   transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .btn{  
   border-radius: 4px;
@@ -368,6 +583,8 @@ display: none;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
+
+
 
 #stars {
   width: 1px;
