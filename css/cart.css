@@ -209,12 +209,13 @@ height:23px;
 
 .section2{
     background-color:#ffd6b6;
-    background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%); 
+    /* background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%);  */
+    background: radial-gradient(ellipse at bottom, #524b43 0%, #9c4502 100%); 
     border-radius: 10px;
     text-align: center;
     /* background: radial-gradient(ellipse at bottom, #cea581 0%, #ffd6b6 100%);
  */
-    height: 500vh;
+    height: 100vh;
 }
 
 
@@ -225,6 +226,9 @@ height:23px;
     font-size: 2rem;
     font-weight: 200;
     text-align: left;
+    border-bottom: black 2px solid;
+    width: 100%;
+
 }
 
 .section2 hr{
@@ -233,7 +237,6 @@ height:23px;
     height: 1px;
     border: none;
     margin: 0 5% 0 3%;
-
 }
 
 
@@ -246,6 +249,8 @@ height:23px;
     row-gap: 30px;
     padding: 5%;
     /* background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%);  */
+    background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%); 
+
     background-color: transparent;
     z-index: 1;
     position: absolute;
