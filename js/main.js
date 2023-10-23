@@ -7,26 +7,26 @@ function closeNav(){
 
 
 
-document.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    var section2 = document.querySelector(".section2");
+// document.addEventListener("scroll", function () {
+//     var header = document.querySelector("header");
+//     var section2 = document.querySelector(".section2");
+
+//     // Obtén la posición vertical del encabezado y la .section2
+//     var headerTop = header.getBoundingClientRect().top;
+//     var section2Top = section2.getBoundingClientRect().top;
     
-    // Obtén la posición vertical del encabezado y la .section2
-    var headerTop = header.getBoundingClientRect().top;
-    var section2Top = section2.getBoundingClientRect().top;
-    
-    // Si la parte superior de la .section2 está en la parte superior de la ventana, cambia el fondo del encabezado a transparente
-    if (section2Top <= 0) {
-        header.style.backgroundColor = "rgb(214, 213, 215)";
-    } else {
-        header.style.backgroundColor = "transparent"; // Si no, mantenlo blanco
-    }
-    });
+//     // Si la parte superior de la .section2 está en la parte superior de la ventana, cambia el fondo del encabezado a transparente
+//     if (section2Top <= 0) {
+//         header.style.backgroundColor = "rgb(214, 213, 215)";
+//     } else {
+//         header.style.backgroundColor = "transparent"; // Si no, mantenlo blanco
+//     }
+//     });
 
 
-document.addEventListener("click", function(){
+// document.addEventListener("click", function(){
 
-})
+// })
 
 
 
@@ -34,43 +34,43 @@ document.addEventListener("click", function(){
 
 
 // Obtén una referencia al video
-const video = document.querySelector('video');
+// const video = document.querySelector('video');
 
 // Obtén referencias a los botones
 // const volUpButton = document.getElementById('volUpButton');
 // const playButton = document.getElementById('playButton');
 
-const volUpButton = document.getElementById('volUpButton')
-const playButton = document.getElementById('playButton')
+// const volUpButton = document.getElementById('volUpButton')
+// const playButton = document.getElementById('playButton')
 
 
 // Agrega un manejador de eventos al botón de aumento de volumen
-
+// 
 // volUpButton.addEventListener('click', () => {
 //     // Verifica el estado del volumen actual del video
-//     if (video.volume === 0) {
+//     // if (video.volume === 0) {
 //         // Si el volumen está en silencio, ajústalo al máximo
-//         video.volume = 1;
-//     } else {
+//     //     video.volume = 1;
+//     // } else {
 //         // Si el volumen no está en silencio, ponlo en silencio
-//         video.volume = 0;
-//     }
-// });
+// //         video.volume = 0;
+// //     }
+// // });
 
 
 
 
 // Agrega un manejador de eventos al botón de reproducción / pausa
-playButton.addEventListener('click', () => {
+// playButton.addEventListener('click', () => {
     // Verifica el estado de reproducción actual del video
-    if (video.paused) {
+    // if (video.paused) {
         // Si el video está pausado, reprodúcelo
-        video.play();
-    } else {
+    //     video.play();
+    // } else {
         // Si el video se está reproduciendo, páusalo
-        video.pause();
-    }
-});
+//         video.pause();
+//     }
+// });
 
 
 
@@ -149,23 +149,23 @@ playButton.addEventListener('click', () => {
     // }
 
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml12');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// var textWrapper = document.querySelector('.ml12');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml12 .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12 .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
-  });
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.ml12 .letter',
+//     translateX: [40,0],
+//     translateZ: 0,
+//     opacity: [0,1],
+//     easing: "easeOutExpo",
+//     duration: 1200,
+//     delay: (el, i) => 500 + 30 * i
+//   }).add({
+//     targets: '.ml12 .letter',
+//     translateX: [0,-30],
+//     opacity: [1,0],
+//     easing: "easeInExpo",
+//     duration: 1100,
+//     delay: (el, i) => 100 + 30 * i
+//   });
