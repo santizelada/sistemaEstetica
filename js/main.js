@@ -1,3 +1,12 @@
+function openNav(){
+    document.getElementById("mobile-menu").style.width="100%"
+}
+function closeNav(){
+    document.getElementById("mobile-menu").style.width="0%"
+}
+
+
+
 document.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     var section2 = document.querySelector(".section2");
@@ -36,16 +45,17 @@ const playButton = document.getElementById('playButton')
 
 
 // Agrega un manejador de eventos al botón de aumento de volumen
-volUpButton.addEventListener('click', () => {
-    // Verifica el estado del volumen actual del video
-    if (video.volume === 0) {
-        // Si el volumen está en silencio, ajústalo al máximo
-        video.volume = 1;
-    } else {
-        // Si el volumen no está en silencio, ponlo en silencio
-        video.volume = 0;
-    }
-});
+
+// volUpButton.addEventListener('click', () => {
+//     // Verifica el estado del volumen actual del video
+//     if (video.volume === 0) {
+//         // Si el volumen está en silencio, ajústalo al máximo
+//         video.volume = 1;
+//     } else {
+//         // Si el volumen no está en silencio, ponlo en silencio
+//         video.volume = 0;
+//     }
+// });
 
 
 
@@ -138,3 +148,24 @@ playButton.addEventListener('click', () => {
     //     }
     // }
 
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });

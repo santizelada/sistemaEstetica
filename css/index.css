@@ -10,6 +10,22 @@
     font-family: 'Karla', sans-serif;
 }
 
+.ml12 {
+    font-weight: 200;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+
+
+
 
 body{
     background-color:rgb(214, 213, 215);
