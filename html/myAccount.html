@@ -53,44 +53,56 @@
                             <div class="card-3d-wrapper">
                               <div class="card-front">
                                 <div class="center-wrap">
-                                  <form class="section text-center">
+                                  <form id="loginForm" class="section text-center">
                                     <h4 class="mb-4 pb-3">Iniciar sesión</h4>
                                     <div class="form-group">
-                                      <input type="email" class="form-style" placeholder="E-mail" required > 
+                                      <input id="loginEmail" type="email" class="form-style" placeholder="E-mail" required > 
                                       <i class="input-icon uil uil-at"></i>
                                     </div>	
                                     <div class="form-group mt-2">
-                                      <input type="password" class="form-style" placeholder="Contraseña" required>
+                                      <input id="loginPassword" type="password" class="form-style" placeholder="Contraseña" required>
                                       <i class="input-icon uil uil-lock-alt"></i>
                                     </div>
-                                    <a href="../index.html" class="btn mt-4">Iniciar sesión</a>
+                                    <button type="submit" class="btn mt-4">Iniciar sesión</button>
                                     <p class="mb-0 mt-4 text-center"><a href="../index.html" class="link">¿Olvidaste tu contraseña?</a></p>
                                       </form>
                                     </div>
                                   </div>
                               <div class="card-back">
                                 <div class="center-wrap">
-                                  <div class="section text-center">
+                                  <form id="registerForm" class="section text-center">
                                     <h4 class="mb-3 pb-3">Registrarse </h4>
                                     <div class="form-group">
-                                      <input type="text" class="form-style" placeholder="Nombre y Apellido">
+                                      <input id="registerName" type="text" class="form-style" placeholder="Nombre" required>
+                                      <i class="input-icon uil uil-user"></i>
+                                    </div>	
+
+                                    <div class="form-group">
+                                      <input id="registerLastName" type="text" class="form-style" placeholder="Apellido" required>
                                       <i class="input-icon uil uil-user"></i>
                                     </div>	
 
                                     <div class="form-group mt-2">
-                                      <input type="tel" class="form-style" placeholder="Teléfono / Celular">
+                                      <input id="registerPhone" type="tel" class="form-style" placeholder="Teléfono / Celular" required>
                                       <i class="input-icon uil uil-phone"></i>
                                     </div>	
+                                    
                                     <div class="form-group mt-2">
-                                      <input type="email" class="form-style" placeholder="E-mail">
+                                      <input id="registerDNI" type="tel" class="form-style" placeholder="D.N.I" required>
+                                      <i class="input-icon uil uil-phone"></i>
+                                    </div>	
+
+                                    <div class="form-group mt-2">
+                                      <input id="registerEmail" type="email" class="form-style" placeholder="E-mail" required>
                                       <i class="input-icon uil uil-at"></i>
                                     </div>
+
                                     <div class="form-group mt-2">
-                                      <input type="password" class="form-style" placeholder="Contraseña">
+                                      <input id="registerPassword" type="password" class="form-style" placeholder="Contraseña" required>
                                       <i class="input-icon uil uil-lock-alt"></i>
                                     </div>
-                                    <a href="../index.html" class="btn mt-4">Register</a>
-                                      </div>
+                                    <button type="submit" class="btn mt-4">Register</button>
+                                      </form>
                                     </div>
                                   </div>
                                 </div>
@@ -130,6 +142,6 @@
         </div>
         </footer>
 
-<script src="../js/main.js"></script>
+<script src="../js/login-register.js"></script>
 </body>
 </html>
