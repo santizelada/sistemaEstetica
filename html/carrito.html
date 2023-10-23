@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Servicios</title>
+    <link rel="stylesheet" type="text/css" href="../css/carrito.css"> <!-- Archivo de estilos CSS -->
+</head>
+
+<body>
+
+    <div>
+        <header class="headerNavbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/Magnificatestetique.png" alt="Logo de la marca"></a>
+
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./html/myAccount.html"> Iniciar Sesión </a></li>
+                    <li><a href="./html/cart.html"> Admin </a></li>
+                    <li>
+                        <div class="shopping">
+                            <img class="shoppingLogo" src="../img/handbag.svg" alt="Símbolo de una bolsa">
+                            <span class="shoppingquantity">0</span>
+                        </div>
+                    </li>
+                    <a class="btnContactanos"
+                        href="//wa.me/543816214102?text=¡Hola! Mi nombre es ... y me gustaría consultar sobre..."
+                        target="_blank"> Contactanos </a>
+                </ul>
+
+            </nav>
+
+
+            <a onclick="openNav()" class="menuHamburgesa" href="#"> <button>MENU</button></a>
+
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="./html/cart.html"> Carrito </a>
+                    <a href="./html/myAccount.html"> Iniciar sesión </a>
+                    <a href="./html/contacUs.html"> Contactanos </a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="panelProductos">
+        <h1>Mis productos</h1>
+        <ul class="listPanel custom-scrollbar">
+
+        </ul>
+        <div class="checkOut">
+            <div class="totalPanel">$ 0 </div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div> 
+
+    <section>
+        <div class="section-container-cards">
+            <div id="servicios-container" class="servicios-container"></div>
+        </div>
+        <div id="stars" class="estrellas"></div>
+        <div id="stars2" class="estrellas"></div>
+        <div id="stars3" class="estrellas"></div>
+    </section>
+
+ 
+
+
+    <footer class="footer">
+        <!-- <div class="footer-container"> -->
+
+            <div class="footer-row">
+                
+                <div class="footer-links">
+                    <h4>Navegar</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./cart.html">Carrito</a></li>
+                        <li><a href="./myAccount.html">Iniciar sesión / Registro </a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/magnificat_estetica/" target="_blank">Instagram</a></li>
+                        <li><a href="https://wa.me/543816214102" target="_blank">Whatsapp</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-links">
+                    <span class="copyright">&copy;2023, Magnificatestetique. All rights reserved.</span>
+
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </footer>
+
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>
