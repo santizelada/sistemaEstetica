@@ -141,6 +141,10 @@ header {
   .menu{
       display: inherit;
   }
+  body{
+    height: 190vh;
+  }
+
 }
 
 .header .overlay{
@@ -260,16 +264,6 @@ header {
   
 }
 
-@media(max-width:991px){
-  .footer-row{
-      text-align: center;
-
-  }
-  .footer-links{
-      width: 100%;
-      margin-bottom: 30px;
-  }
-}
 
 
 .copyright{
@@ -346,9 +340,9 @@ body{
   /* background: radial-gradient(ellipse at bottom, #bc6a21 0%, #ffd6b6 100%); */
   /* background: radial-gradient(ellipse at bottom, #d5945b 0%, #934306 100%);  */
   background: radial-gradient(ellipse at bottom, #28231e 0%, #934306 100%); 
-
-
 }
+
+
 
 .videoContainer{
     position: relative;
@@ -423,7 +417,7 @@ left: 20px;
 
 
 .elementContainer{
-  height: 100vh;
+  height: 100%;
 
 }
 
@@ -525,7 +519,7 @@ display: none;
 
 .card-front, .card-back {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-color: #d37933;;
   background-image: url('/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png');
   position: absolute;
@@ -538,6 +532,23 @@ display: none;
 .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
   transform: rotateY(180deg);
 }
+
+
+
+
+
+@media(min-width: 1500px){
+  body{
+    height: 140vh;
+  }
+  
+footer{
+  margin-top: 20%;
+}
+}
+
+
+
 .center-wrap{
   position: absolute;
   width: 100%;
@@ -612,6 +623,24 @@ display: none;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 
+
+@media(max-width:991px){
+  .footer-row{
+      text-align: center;
+
+  }
+  .footer-links{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  body{
+    height: 190vh;
+  }
+  footer{
+    margin-top: 0%;
+  }
+  
+}
 
 
 
