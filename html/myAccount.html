@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Webleb</title>
   <meta charset="utf-8">
@@ -8,138 +9,177 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/myAccount.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+
 <body>
   <header class="header">
     <div class="logo">
-        <a href="../index.html"><img src="../img/Magnificatestetique.png" alt="Logo de la marca"></a>
+      <a href="../index.html"><img src="../img/Magnificatestetique.png" alt="Logo de la marca"></a>
 
     </div>
     <nav>
 
-        <ul class="nav-links">
-          <li><a href="../index.html"> Inicio </a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="../index.html"> Inicio </a></li>
+      </ul>
     </nav>
-    <a class="btn" href="//wa.me/543816214102?text=¡Hola! Mi nombre es ... y me gustaría consultar sobre..." target="_blank">  Contactanos </a>
+    <a class="btn" href="//wa.me/543816214102?text=¡Hola! Mi nombre es ... y me gustaría consultar sobre..."
+      target="_blank"> Contactanos </a>
     <a onclick="openNav()" class="menu" href="#"> <button>MENU</button></a>
-    
+
     <div class="overlay" id="mobile-menu">
-        <a onclick="closeNav()" href="" class="close">&times;</a>
-        <div class="overlay-content">
-            <a href="../html/cart.html"> Carrito </a>
-            <a href="../html/myAccount.html"> Iniciar Sesión </a>
-            <a class="btn" href="//wa.me/543816214102?text=¡Hola! Mi nombre es ... y me gustaría consultar sobre..." target="_blank">  Contactanos </a>
-          </div>
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+        <a href="../html/cart.html"> Carrito </a>
+        <a href="../html/myAccount.html"> Iniciar Sesión </a>
+        <a class="btn" href="//wa.me/543816214102?text=¡Hola! Mi nombre es ... y me gustaría consultar sobre..."
+          target="_blank"> Contactanos </a>
+      </div>
     </div>
 
-</header>
-      <main>
-      <section class="elementContainer">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-                <div class="section">
-                  <div class="container containerLoginRegister">
-                    <div class="row justify-content-center">
-                      <div class="col-12 text-center align-self-center py-5">
-                        <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                          <h6 class="mb-0 pb-3"><span>Iniciar sesión </span><span>Registrarse</span></h6>
-                                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                                <label for="reg-log"></label>
-                          <div class="card-3d-wrap mx-auto">
-                            <div class="card-3d-wrapper">
-                              <div class="card-front">
-                                <div class="center-wrap">
-                                  <form id="loginForm" class="section text-center">
-                                    <h4 class="mb-4 pb-3">Iniciar sesión</h4>
-                                    <div class="form-group">
-                                      <input id="loginEmail" type="email" class="form-style" placeholder="E-mail" required > 
-                                      <i class="input-icon uil uil-at"></i>
-                                    </div>	
-                                    <div class="form-group mt-2">
-                                      <input id="loginPassword" type="password" class="form-style" placeholder="Contraseña" required>
-                                      <i class="input-icon uil uil-lock-alt"></i>
-                                    </div>
-                                    <button type="submit" class="btn mt-4">Iniciar sesión</button>
-                                    <p class="mb-0 mt-4 text-center"><a href="../index.html" class="link">¿Olvidaste tu contraseña?</a></p>
-                                      </form>
-                                    </div>
-                                  </div>
-                              <div class="card-back">
-                                <div class="center-wrap">
-                                  <form id="registerForm" class="section text-center">
-                                    <h4 class="mb-3 pb-3">Registrarse </h4>
-                                    <div class="form-group">
-                                      <input id="registerName" type="text" class="form-style" placeholder="Nombre" required>
-                                      <i class="input-icon uil uil-user"></i>
-                                    </div>	
-
-                                    <div class="form-group">
-                                      <input id="registerLastName" type="text" class="form-style" placeholder="Apellido" required>
-                                      <i class="input-icon uil uil-user"></i>
-                                    </div>	
-
-                                    <div class="form-group mt-2">
-                                      <input id="registerPhone" type="tel" class="form-style" placeholder="Teléfono / Celular" required>
-                                      <i class="input-icon uil uil-phone"></i>
-                                    </div>	
-                                    
-                                    <div class="form-group mt-2">
-                                      <input id="registerDNI" type="tel" class="form-style" placeholder="D.N.I" required>
-                                      <i class="input-icon uil uil-phone"></i>
-                                    </div>	
-
-                                    <div class="form-group mt-2">
-                                      <input id="registerEmail" type="email" class="form-style" placeholder="E-mail" required>
-                                      <i class="input-icon uil uil-at"></i>
-                                    </div>
-
-                                    <div class="form-group mt-2">
-                                      <input id="registerPassword" type="password" class="form-style" placeholder="Contraseña" required>
-                                      <i class="input-icon uil uil-lock-alt"></i>
-                                    </div>
-                                    <button type="submit" class="btn mt-4">Register</button>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+  </header>
+  <main>
+    <section class="elementContainer">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div class="section">
+        <div class="container containerLoginRegister">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+              <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                <h6 class="mb-0 pb-3"><span>Iniciar sesión </span><span>Registrarse</span></h6>
+                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                <label for="reg-log"></label>
+                <div class="card-3d-wrap mx-auto">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="center-wrap">
+                        <form id="loginForm" class="section text-center">
+                          <h4 class="mb-4 pb-3">Iniciar sesión</h4>
+                          <div class="form-group">
+                            <input id="loginEmail" type="email" class="form-style" placeholder="E-mail" required>
+                            <i class="input-icon uil uil-at"></i>
                           </div>
-                        </div>
+                          <div class="form-group mt-2">
+                            <input id="loginPassword" type="password" class="form-style" placeholder="Contraseña"
+                              required>
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <button type="submit" class="btn mt-4">Iniciar sesión</button>
+                          <p class="mb-0 mt-4 text-center"><a href="../index.html" class="link">¿Olvidaste tu
+                              contraseña?</a></p>
+                        </form>
+                      </div>
                     </div>
-                </div>
-      </section>
-    </main>
-      <footer class="footer">  
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-links">
-                    <h4>Navegar</h4>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./cart.html">Carrito</a></li>
-                        <li><a href="./myAccount.html">Iniciar sesión / Registro </a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Contactanos</h4>
-                    <ul>
-                        <li><a href="https://www.instagram.com/magnificat_estetica/" target="_blank">Instagram</a></li>
-                        <li><a href="https://wa.me/543816214102" target="_blank">Whatsapp</a></li>
-                        <li><a href="https://www.facebook.com/baguesfragancias.internacionales.750" target="_blank">Facebook</a></li>
-                      </ul>
-                    
-                </div>
-                <div class="footer-links">
-                    <span class="copyright">&copy;2023, Magnificatestetique. All rights reserved.</span>
-                    
-                </div>
-            </div>
-        </div>
-        </footer>
+                    <div class="card-back">
+                      <div class="center-wrap">
+                        <form id="registerForm" class="section text-center">
+                          <h4 class="mb-3 pb-3">Registrarse </h4>
+                          <div class="form-group">
+                            <input id="registerName" type="text" class="form-style" placeholder="Nombre" required>
+                            <i class="input-icon uil uil-user"></i>
+                          </div>
 
-<script src="../js/login-register.js"></script>
+                          <div class="form-group">
+                            <input id="registerLastName" type="text" class="form-style" placeholder="Apellido" required>
+                            <i class="input-icon uil uil-user"></i>
+                          </div>
+
+                          <div class="form-group mt-2">
+                            <input id="registerPhone" type="tel" class="form-style" placeholder="Teléfono / Celular"
+                              required>
+                            <i class="input-icon uil uil-phone"></i>
+                          </div>
+
+                          <div class="form-group mt-2">
+                            <input id="registerDNI" type="tel" class="form-style" placeholder="D.N.I" required>
+                            <i class="input-icon uil uil-phone"></i>
+                          </div>
+
+                          <div class="form-group mt-2">
+                            <input id="registerEmail" type="email" class="form-style" placeholder="E-mail" required>
+                            <i class="input-icon uil uil-at"></i>
+                          </div>
+
+                          <div class="form-group mt-2">
+                            <input id="registerPassword" type="password" class="form-style" placeholder="Contraseña"
+                              required>
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <button type="submit" class="btn mt-4">Register</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h4>Navegar</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./cart.html">Carrito</a></li>
+            <li><a href="./myAccount.html">Iniciar sesión / Registro </a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contactanos</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/magnificat_estetica/" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/543816214102" target="_blank">Whatsapp</a></li>
+            <li><a href="https://www.facebook.com/baguesfragancias.internacionales.750" target="_blank">Facebook</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="footer-links">
+          <span class="copyright">&copy;2023, Magnificatestetique. All rights reserved.</span>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/login-register.js"></script>
+
+  <div id="modalRegister" class="modal">
+    <div class="modal-wrapper">
+      <div class="modal-content-register">
+        <div class="header-modal-register">
+          <h2>Su registro fue exitoso</h2>
+          <button class="close" onClick="closeRegistroExito()">
+            <span><i class="bi bi-x-lg"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modalLogin" class="modal">
+    <div class="modal-wrapper">
+      <div class="modal-content-login">
+        <div class="header-modal-login">
+          <h2>Inicio de sesión exitoso. Bienvenido</h2>
+          <button class="close" onClick="closeLoginExito()">
+            <span><i class="bi bi-x-lg"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </body>
+
 </html>

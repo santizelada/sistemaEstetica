@@ -621,7 +621,19 @@ header .shopping .bagLogo {
 #selectTurnos option {
     color: #000; /* Cambia #000 al color que desees (por ejemplo, #333 para un gris oscuro) */
 }
+.close-modal-button{
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 4.5em;
+    height: 3em;
+    margin-top: 0.6em;
 
+    border-width: 0;
+    background-color: #cf691b;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #000;
+}
 
 /* --------estrellas ------- */
 #stars {

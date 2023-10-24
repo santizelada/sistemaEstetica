@@ -1,3 +1,14 @@
+// Cierra el modal al hacer clic en el botón de cierre
+function closeRegistroExito() {
+    const modalRegister = document.getElementById('modalRegister');
+    modalRegister.style.display = 'none';
+}
+
+function closeLoginExito() {
+    const modalLogin = document.getElementById('modalLogin');
+    modalLogin.style.display = 'none';
+}
+
 document.getElementById('registerForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -30,7 +41,11 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
 
     fetch("https://estetica-backend-5ltx.onrender.com/usuario/register", requestOptions)
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => {
+            console.log(result); // Puedes dejar esta línea para depuración si lo deseas
+            // Aquí muestra el modal de registro exitoso
+            document.getElementById('modalRegister').style.display = 'block';
+        })
         .catch(error => console.log('error', error));
 });
 
@@ -59,7 +74,10 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
     fetch("https://estetica-backend-5ltx.onrender.com/usuario/login", requestOptions)
         .then(response => response.text())
-        .then(result => console.log('logueo exitoso'))
+        .then(result => {
+            console.log('logueo exitoso'); // Puedes dejar esta línea para depuración si lo deseas
+            // Muestra el modal de inicio de sesión exitoso
+            document.getElementById('modalLogin').style.display = 'block';
+        })
         .catch(error => console.log('error', error));
 });
-

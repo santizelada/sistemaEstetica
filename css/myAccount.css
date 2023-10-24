@@ -280,12 +280,40 @@ header {
 
 
 
+/* Modal REGISTER exitoso */
+/* Modal LOGIN exitoso */
+.modal-wrapper{
+  background-color:#BBBBBB;
+}
+.modal-content-register, .modal-content-login{
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
+.header-modal-register, .header-modal-login{
+  display: flex;
+  padding-left:  1em;
+  justify-content: space-between;
+}
 
-
-
-
-
-
+.header-modal-register button, .header-modal-login button{
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 2.3em;
+  height: 2em;
+  margin-top: 0.6em;
+  display: flex;
+  justify-content: center;
+  border-width: 0;
+  background-color: #cf691b;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #000;
+}
+.header-modal-register span, .header-modal-login span, .header-modal-register h2, .header-modal-login h2{
+  margin-inline: 1em;
+  margin-top: 0.6em;
+}
 
 
 
@@ -583,6 +611,8 @@ display: none;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
+
+
 
 
 
