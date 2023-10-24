@@ -240,23 +240,28 @@ body{
 
 .section-forms .form-1-container{
     background-color: rgba(0, 0, 0, 0.729);
-    padding: 20px 0;
+    padding: 20% 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
     text-transform: uppercase;
+    text-align: center;
 }
 
 .section-forms .form1{
     border: solid 2px rgb(1, 1, 1);
     transition: 0.5s;
     border-radius: 20px;
-    background-color: rgb(87, 0, 128);
+    background-color: #bf6724;
 }
 
 .form1:hover{
-    background-color: rgb(141, 8, 203);
+    background-color: #1b3039;
 }
 
 .section-forms .form-2-container{
@@ -264,6 +269,24 @@ h1{
     padding: 20px 0;
     height: 100vh;
 }
+
+@media(min-width:1100px){
+    .section-forms .form-1-container{
+    padding-top: 
+    20%;
+    }
+
+}
+
+/* @media(max-width:900px){
+    .section-forms .form-1-container{
+    padding-top: 
+    10%;
+    }
+
+} */
+
+
 
 .section-forms .form2{
     border: solid 5px rgb(4, 0, 251);
