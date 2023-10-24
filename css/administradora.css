@@ -7,6 +7,8 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    background-color: rgb(0, 0, 0);
+
 }
 
 .header{
@@ -199,6 +201,30 @@
     
 }
 
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.8em;
+    transition: 1.3s;
+
+}
+
+.modal-header button{
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 1.5em;
+    height: 1.8em;
+    margin: 1.3em;
+    margin-top: 0.6em;
+    border-width: 0;
+    background-color: #cf691b;
+    transition: 0.5s;
+    cursor: pointer;
+    color:#cea581;
+}
+
 @media(max-width:991px){
     .footer-row{
         text-align: center;
@@ -254,22 +280,49 @@ h1{
 }
 
 .section-forms .form1{
-    border: solid 2px rgb(1, 1, 1);
+    border: solid 1px rgb(1, 1, 1);
     transition: 0.5s;
     border-radius: 20px;
-    background-color: #bf6724;
+    background-color: #1b3039;
+
 }
 
 .form1:hover{
-    background-color: #1b3039;
+    background-color: #294957;
 }
 
 .section-forms .form-2-container{
-    background-color: rgb(0, 60, 128);
+    background-color: #1b3039;
     padding: 20px 0;
     height: 100vh;
 }
+.form-2-container table{
+    border-radius: 20px;
 
+}
+.container-input{
+    background-color: #294957;
+}
+.container-input label{
+    background-color: #294957;
+
+}
+.btt-table-agendar{
+    background-color: #294957;
+    color:#cea581;
+    width: 8em;
+    height: 3em;
+}
+.btt-table-agendar:hover{
+    background-color:#375f70;
+
+}
+.btt-table-ver{
+    background-color: #294957;
+    color:#cea581;
+    width: 5em;
+    height: 3em;
+}
 @media(min-width:1100px){
     .section-forms .form-1-container{
     padding-top: 
