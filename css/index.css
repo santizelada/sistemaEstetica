@@ -304,6 +304,21 @@ left: 20px;
     bottom: 30px;
     right: 35px;
 }
+.btnContactanos {
+    font-weight: 700;
+    color: #1b3039 !important;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btnContactanos:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e !important;
+    transform: scale(1.1);
+}
 
 .whatsapp{
     position: fixed;
