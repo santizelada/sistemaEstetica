@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/administradora.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="../img/Magnificatestetique.png" alt="Logo de la marca"></a>
+
+        </div>
+        <nav>
+            
+            <ul class="nav-links">
+                <li><a href="./html/cart.html"> Wishlist </a></li>
+                <li><a href="./html/myAccount.html"> My account </a></li>
+                
+            </ul>
+        </nav>
+        <a class="btn" href="./html/contacUs.html"> <button> Contact Us </button></a>
+        <a onclick="openNav()" class="menu" href="#"> <button>MENU</button></a>
+        
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="./html/cart.html"> Wishlist </a>
+                <a href="./html/myAccount.html"> My account </a>
+                <a href="./html/contacUs.html"> Contact Us </a>
+            </div>
+        </div>
+    </header>
+    <section class="section-forms">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="form-1-container d-flex flex-column align-items-center">
+            <h1>Form de panel de administración </h1>
+
+            <form class="form1 w-50 p-5 d-flex flex-column align-items-center justify-content-center" action="">
+                <div class="mb-3 p-2 w-100">
+                    <label for="formGroupExampleInput" class="form-label">Día</label>                    
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona el día</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                      </select>
+
+                </div>
+                  <div class="mb-3 p-2 w-100">
+                    <label for="formGroupExampleInput2" class="form-label">Mes</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona el mes</option>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                      </select>                  
+                    </div>
+                  <div class="mb-3 p-2 w-100">
+                    <label for="formGroupExampleInput2" class="form-label">Hora</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona la hora</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="00">00</option>
+                      </select>                  
+                </div>
+                  <div class="mb-3 p-2 w-100">
+                    <label for="formGroupExampleInput2" class="form-label">Minuto</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="minuto">Minuto</option>
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                    </select>
+                  </div>
+                        <button type="button" class="btn btn-success">AGENDAR</button>
+                </form>
+
+        </div>
+        <div class="form-2-container d-flex flex-column align-items-center p-5">
+            <h1> Ver turnos </h1>
+            <table class="table table-hover ">
+                <tr> 
+   
+                    <td>Día</td> 
+                    <td>Mes</td> 
+                    <td>Hora</td>
+          
+                </tr>          
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>  
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>  
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>  
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>      
+            </table>
+            <button type="button" class="btn btn-success">VER</button>
+
+        </div>
+        
+        <div class="form-3-container  d-flex flex-column align-items-center p-5">
+            <h1> Historial de reserva </h1>
+            <table class="table table-hover">
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>          
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>  
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>  
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>  
+                <tr> 
+                    <td>Columna 1</td> 
+                    <td>Columna 2</td> 
+                    <td>Columna 3</td> 
+                </tr>      
+            </table>
+            <button type="button" class="btn btn-success">VER</button>
+
+        </div>
+       
+
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+</section>
+
+<!-- 
+    <footer class="footer">  
+
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="#">You can call or email us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Product Care</a></li>
+                        <li><a href="#">Stores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>CONNECT</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-links">
+                    <span class="copyright">&copy;2023, Magnificatestetique. All rights reserved.</span>
+                    
+                </div>
+                
+    
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    </footer>
+-->
+        <script type="text/javascript" src="../js/admin.js"></script>
+</body>
+</html>
